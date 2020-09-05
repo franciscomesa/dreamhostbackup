@@ -38,6 +38,8 @@ add line
 Per each domain
 
 ### Windows
+Create ftp script file 
+~~~
 open ftp.domain.com
 user
 pass
@@ -46,5 +48,9 @@ lcd \localdir
 mget *
 mdel *
 bye
+~~~
 
-
+Execute donwload file domain_com-download.txt
+~~~
+ftp -i -s:domain_com-download.txt
+~~~

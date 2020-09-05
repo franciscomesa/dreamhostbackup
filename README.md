@@ -17,7 +17,7 @@ You need to edit:
 6. password=db-user-password
 7. webdir=$HOME/example.com
 
-
+## Generate backups at regular periods
 Execute
 ~~~
 sh ~/backup/example.com-backup.sh
@@ -33,3 +33,18 @@ add line
 ~~~
 * * * * 0 sh ~/backup/franciscomesa_es-backup.sh
 ~~~
+
+## Download files
+Per each domain
+
+### Windows
+open ftp.domain.com
+user
+pass
+cd backup/domain.com/
+lcd \localdir
+mget *
+mdel *
+bye
+
+

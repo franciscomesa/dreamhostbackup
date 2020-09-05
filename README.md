@@ -16,3 +16,20 @@ You need to edit:
 5. username=db-username
 6. password=db-user-password
 7. webdir=$HOME/example.com
+
+
+Execute
+~~~
+sh ~/backup/example.com-backup.sh
+~~~
+
+Cron it:
+Per example, weekly:
+~~~
+crontab -e
+~~~
+
+add line
+~~~
+* * * * 0 sh ~/backup/franciscomesa_es-backup.sh
+~~~

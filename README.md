@@ -2,7 +2,12 @@
 
 Backup script to use in Wordpress sites at Dreamhost provider.
 
-Generate one file per domain. You need to edit 
+##Generate one file per domain. 
+~~~
+touch domain_com-backup.sh
+~~~
+
+You need to edit: 
 
 1. domain=( domain.com )
 2. sqldb=( your-db-name )

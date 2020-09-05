@@ -25,8 +25,9 @@ do
 
 done
 
+# Not yet
 #use aws-cli to upload to DreamObjects
-aws --endpoint-url https://objects-us-east-1.dream.io s3 sync $opath s3://bucket-name/backups/ --exclude "$opath"example.com-backup.sh
+#aws --endpoint-url https://objects-us-east-1.dream.io s3 sync $opath s3://bucket-name/backups/ --exclude "$opath"example.com-backup.sh
 
 #delete backup from web server
-find $HOME/backup/* -type d -exec rm -rf {} \; 2> /dev/null
+#find $HOME/backup/* -type d -exec rm -rf {} \; 2> /dev/null
